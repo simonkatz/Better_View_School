@@ -28,3 +28,11 @@ $('.bxslider').bxSlider({
   captions: true,
   adaptiveHeight: true
 });
+
+$('.portfolio').bxSlider({
+  mode: 'fade',
+  auto: true,
+  controls: false,
+  captions: true,
+  pagerCustom: '#bx-pager'
+});
