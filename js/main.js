@@ -21,18 +21,48 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 //implement bx-slider
-$('.bxslider').bxSlider({
+$('.facility').bxSlider({
   mode: 'fade',
   auto: true,
   controls: false,
   captions: true,
-  adaptiveHeight: true
+  pager: true,
+  pagerCustom: '#bx-facility'
 });
 
-$('.portfolio').bxSlider({
+//implement bx-slider
+$('.pupils').bxSlider({
   mode: 'fade',
   auto: true,
   controls: false,
   captions: true,
-  pagerCustom: '#bx-pager'
+  pager: true,
+  pagerCustom: '#bx-pupils'
+});
+
+//implement bx-slider
+$('.extra').bxSlider({
+  mode: 'fade',
+  auto: true,
+  controls: false,
+  captions: true,
+  pager: true,
+  pagerCustom: '#bx-extra'
+});
+
+$('.about').bxSlider({
+  mode: 'fade',
+  auto: true,
+  controls: false,
+  captions: true,
+});
+
+$('#fullpage').fullpage({
+    sectionsColor: ['white', '#F5F5F5'],
+    loopHorizontal: false,
+    anchors:['firstPage', 'secondPage'],
+    paddingTop: '30px',
+    paddingBottom: '30px',
+    fitToSection: false,
+    autoScrolling: false
 });

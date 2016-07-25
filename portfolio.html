@@ -1,140 +1,237 @@
 
     <script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <div id="header"></div>
-    <section id="portfolio" class="bg-light-green">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12  text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">We have a great portfolio</h3>
+
+    <section id="portfolio">
+
+        <div id="fullpage">
+            <div class="section">
+                <div class="container">
+                    <div class="col-lg-12  text-center">
+                        <div class="row">
+                            <div class="col-lg-12 text-center heading">
+                                <h2 class="section-heading">Portfolio</h2>
+                                <h3 class="section-subheading">
+                                    <i class="fa fa-gg red"></i>
+                                    <i class="fa fa-gg orange"></i>
+                                    <i class="fa fa-gg green"></i>
+                                    <i class="fa fa-gg red"></i>
+                                    <i class="fa fa-gg orange"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="#secondPage/" class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/facilities/facilities.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Our Facilities</h4>
+                                <p>We have permanent buildings in a huge compound 
+                                and free from dust with electricity and running water.</p>
+                                <p>The buildings were approved to ensure safety and good health.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="#secondPage/1" class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/pupils/pupils.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Our Pupils</h4>
+                                <p>Very competitive education with free stationery 
+                                for all pupils.</p>
+                                <p>We offer free breakfast for all pupils.</p>
+                                <p>We have a conducive learning environment with 
+                                a modern compound.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="#secondPage/2" class="portfolio-link">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/activities/swimming.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Extra Curricular Activities</h4>
+                                <p>We encourage our pupils to participate in sports and music.</p>
+                                <p>We also hold birthday parties for the pupils.</p>
+                                <p>We have a modern swimming pool.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+            <div class="section fp-auto-height">
+                    <div class="slide">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12  text-center heading">
+                                <h2 class="section-heading">Our Facilities</h2>
+                                <i class="fa fa-gg red"></i>
+                                <i class="fa fa-gg orange"></i>
+                                <i class="fa fa-gg green"></i>
+                                <i class="fa fa-gg red"></i>
+                                <i class="fa fa-gg orange"></i>
                             </div>
                         </div>
-                        <img src="img/facilities/facilities.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Our Facilities</h4>
-                        <p>We have permanent buildings in a huge compound 
-                        and free from dust with electricity and running water.</p>
-                        <p>The buildings were approved to ensure safety and good health.</p>
+                        <div class="col-md-8">
+                            <ul class="facility">
+                                <li><img src="img/facilities/vans.jpg" title="School Vans"></li>
+                                <li><img src="img/facilities/computer.jpg" title="Computer Class"></li>
+                                <li><img src="img/facilities/pool.jpg" title="Swimming Pool"></li>
+                                <li><img src="img/facilities/dorm.jpg" title="Dormitory"></li>
+                                <li><img src="img/facilities/nurse.jpg" title="School Nurse"></li>
+                                <li><img src="img/facilities/shop.jpg" title="School Shop"></li>
+                                <li><img src="img/facilities/classroom.jpg" title="Classroom"></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="bx-facility">
+                                <div class="thumb">
+                                    <a data-slide-index="0" href=""><img src="img/facilities/vans.jpg" title="School Vans"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="1" href=""><img src="img/facilities/computer.jpg" title="Computer Class"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="2" href=""><img src="img/facilities/pool.jpg" title="Swimming Pool"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="3" href=""><img src="img/facilities/dorm.jpg" title="Dormitory"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="4" href=""><img src="img/facilities/nurse.jpg" title="School Nurse"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="5" href=""><img src="img/facilities/shop.jpg" title="School Shop"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="5" href=""><img src="img/facilities/classroom.jpg" title="Classroom"/></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                    <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12  text-center heading">
+                                <h2 class="section-heading">Our Pupils</h2>
+                                <i class="fa fa-gg red"></i>
+                                <i class="fa fa-gg orange"></i>
+                                <i class="fa fa-gg green"></i>
+                                <i class="fa fa-gg red"></i>
+                                <i class="fa fa-gg orange"></i>
                             </div>
                         </div>
-                        <img src="img/pupils/pupils.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Our Pupils</h4>
-                        <p>Very competitive education with free stationery 
-                        for all pupils.</p>
-                        <p>We offer free breakfast for all pupils.</p>
-                        <p>We have a conducive learning environment with 
-                        a modern compound.</p>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <ul class="pupils">
+                                    <li><img src="img/pupils/uniform.jpg" title="Uniform"></li>
+                                    <li><img src="img/pupils/sports.jpg" title="Sports"></li>
+                                    <li><img src="img/pupils/debate.jpg" title="Debate"></li>
+                                    <li><img src="img/pupils/graduands.jpg" title="Graduands"></li>
+                                    <li><img src="img/pupils/prayer.jpg" title="Prayer"></li>
+                                    <li><img src="img/pupils/assembly.jpg" title="Assembly"></li>
+                                    <li><img src="img/pupils/pupils_van.jpg" title="Pupils Van"></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div id="bx-pupils">
+                                    <div class="thumb">
+                                        <a data-slide-index="0" href=""><img src="img/pupils/uniform.jpg" title="Uniform"/></a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a data-slide-index="1" href=""><img src="img/pupils/sports.jpg" title="Sports"/></a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a data-slide-index="2" href=""><img src="img/pupils/debate.jpg" title="Debate"/></a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a data-slide-index="3" href=""><img src="img/pupils/graduands.jpg" title="Graduands"/></a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a data-slide-index="4" href=""><img src="img/pupils/prayer.jpg" title="Prayer"/></a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a data-slide-index="5" href=""><img src="img/pupils/assembly.jpg" title="Assembly"/></a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a data-slide-index="5" href=""><img src="img/pupils/pupils_van.jpg" title="Pupils Van"/></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                    <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12  text-center heading">
+                                <h2 class="section-heading">Extra Curricular</h2>
+                                <i class="fa fa-gg red"></i>
+                                <i class="fa fa-gg orange"></i>
+                                <i class="fa fa-gg green"></i>
+                                <i class="fa fa-gg red"></i>
+                                <i class="fa fa-gg orange"></i>
                             </div>
                         </div>
-                        <img src="img/activities/swimming.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Extra Curricular Activities</h4>
-                        <p>We encourage our pupils to participate in sports and music.</p>
-                        <p>We also hold birthday parties for the pupils.</p>
-                        <p>We have a modern swimming pool.</p>
-                    </div>
+                        <div class="col-md-8">
+                            <ul class="extra">
+                                <li><img src="img/activities/swimming.jpg" title="Swimming"></li>
+                                <li><img src="img/activities/ballet.jpg" title="Our Ballet Dancers"></li>
+                                <li><img src="img/activities/dancers.jpg" title="Our Traditional Dancers"></li>
+                                <li><img src="img/activities/slide.jpg" title="Playground"></li>
+                                <li><img src="img/activities/birthday.jpg" title="Birthday Celebrations"></li>
+                                <li><img src="img/activities/choir.jpg" title="Our Scchool Choir"></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="bx-extra">
+                                <div class="thumb">
+                                    <a data-slide-index="0" href=""><img src="img/activities/swimming.jpg" title="Swimming"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="1" href=""><img src="img/activities/ballet.jpg" title="Our Ballet Dancers"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="2" href=""><img src="img/activities/dancers.jpg" title="Our Traditional Dancers"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="3" href=""><img src="img/activities/slide.jpg" title="Playground"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="4" href=""><img src="img/activities/birthday.jpg" title="Birthday Celebrations"/></a>
+                                </div>
+                                <div class="thumb">
+                                    <a data-slide-index="5" href=""><img src="img/activities/choir.jpg" title="Our School Choir"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="row col-md-12">
-                        <div class="portfolio">
-                            <ul class="portfolio">
-                                <li><img src="img/activities/swimming.jpg" title="Swimming"></li>
-                                <li><img src="img/activities/ballet.jpg" title="Playground"></li>
-                                <li><img src="img/activities/dancers.jpg" title="Playground"></li>
-                                <li><img src="img/activities/slide.jpg" title="Playground"></li>
-                                <li><img src="img/activities/birthday.jpg" title="Playground"></li>
-                                <li><img src="img/activities/choir.jpg" title="Playground"></li>
-                            </ul>
-                            <div id="bx-pager">
-                                <a data-slide-index="0" href=""><img src="img/activities/swimming.jpg" title="Swimming"/></a>
-                                <a data-slide-index="1" href=""><img src="img/activities/ballet.jpg" title="Playground"/></a>
-                                <a data-slide-index="2" href=""><img src="img/activities/dancers.jpg" title="Playground"/></a>
-                                <a data-slide-index="3" href=""><img src="img/activities/slide.jpg" title="Playground"/></a>
-                                <a data-slide-index="4" href=""><img src="img/activities/birthday.jpg" title="Playground"/></a>
-                                <a data-slide-index="5" href=""><img src="img/activities/choir.jpg" title="Playground"/></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </div>
-    
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <div class="modal-body">
-                            <div class="row col-md-12">
-                                <ul class="portfolio">
-                                    <li><img src="img/activities/swimming.jpg" title="Swimming"></li>
-                                    <li><img src="img/activities/ballet.jpg" title="Playground"></li>
-                                    <li><img src="img/activities/dancers.jpg" title="Playground"></li>
-                                    <li><img src="img/activities/slide.jpg" title="Playground"></li>
-                                    <li><img src="img/activities/birthday.jpg" title="Playground"></li>
-                                    <li><img src="img/activities/choir.jpg" title="Playground"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id='footer'>
-        
-    </div>
-    
+
+    <div id="footer"></div>
+
     <script>
         $("#header").load("header.html");
         $("#footer").load("footer.html");
