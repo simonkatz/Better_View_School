@@ -581,6 +581,9 @@ section#contact .form-group textarea {
     background-color: transparent;
     border: 2px solid white;
 }
+.form-control {
+    color: white;
+}
 
 section#contact .form-group input.form-control {
     height: auto;
