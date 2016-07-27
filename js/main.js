@@ -65,7 +65,9 @@ $('#fullpage').fullpage({
     paddingTop: '30px',
     paddingBottom: '30px',
     fitToSection: false,
-    autoScrolling: false
+    autoScrolling: false,
+    paddingTop: 0,
+    paddingBottom: 0,
 });
  
 $('.marquee').marquee({
