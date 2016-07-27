@@ -652,7 +652,8 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    font-size: 14px;
     line-height: 40px;
 }
 
@@ -660,8 +661,16 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
+}
+footer .sk {
+    max-width: 100px;
+}
+
+.sk:hover {
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    transform: scale(.9); 
 }
 
 ul.social-buttons {
@@ -676,8 +685,8 @@ ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
     outline: 0;
-    color: #fff;
-    background-color: #222;
+    color: red;
+    background-color: white;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -687,6 +696,7 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
     background-color: #006600;
+    color: white;
 }
 
 .btn:focus,
