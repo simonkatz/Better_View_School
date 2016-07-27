@@ -55,6 +55,7 @@ $('.about').bxSlider({
   auto: true,
   controls: false,
   captions: true,
+  pause: 7000
 });
 
 $('#fullpage').fullpage({
@@ -66,3 +67,16 @@ $('#fullpage').fullpage({
     fitToSection: false,
     autoScrolling: false
 });
+ 
+$('.marquee').marquee({
+    duration: 25000,
+    gap: 50,
+    delayBeforeStart: 15000,
+    direction: 'up',
+    duplicated: true,
+    startVisible: true,
+    pauseOnHover: true,
+    pauseOnCycle: true
+});
+
+$('.swipebox').swipebox();
