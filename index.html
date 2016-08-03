@@ -78,10 +78,13 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="intro-text text-center">
+            <div class="intro-text">
+                <div class="logo img-responsive"><img class="center-block" src="img/bvs_logo.png"></div>
                 <div class="intro-heading">Better View School</div>
-                <div class="intro-lead-in">Better To Learn!</div>
-                <a href="#mission" class="page-scroll btn btn-primary">Tell Me More</a>
+                <div class="intro-lead-in">
+                    Better To Learn!
+                    <a href="#mission" class="page-scroll btn btn-primary more">Tell Me More</a>
+                </div>
             </div>
         </div>
     </header>
@@ -222,6 +225,7 @@
             </div>
         </div>
     </section>
+    <div id="footer"></div>
 
     <footer>
         <div class="container">
@@ -261,6 +265,10 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/main.js"></script>
 
+
+    <script>
+    $("#footer").load('footer.html');
+    </script>
 </body>
 
 </html>

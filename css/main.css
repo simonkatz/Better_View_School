@@ -242,22 +242,22 @@ fieldset[disabled] .btn-xl.active {
     background-color: transparent;
 }
 
-@media(min-width:768px) {
-    .navbar-default {
-        padding: 0px 0;
-        border: 2px;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-        background: 
-        linear-gradient(
-            to right, 
-            red, 
-            yellow, 
-            green 80%
-        );
-    }
+.navbar-default {
+    padding: 0px 0;
+    border: 2px;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+    background: 
+    linear-gradient(
+        to right, 
+        red, 
+        yellow, 
+        green 80%
+    );
+}
 
+@media(min-width:768px) {
     .navbar-default .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
@@ -321,9 +321,9 @@ fieldset[disabled] .btn-xl.active {
 header {
     color: #fff;
     background-attachment: scroll;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) ),url(../img/header-bg.jpg);
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
-    background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -335,26 +335,63 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
+@media(min-width: 300px) {
+    header .intro-text .intro-heading {
+        text-transform: uppercase;
+        font-family: serif;
+        font-size: 25px;
+        text-align: center;
+    }
+    header .intro-lead-in {
+        font-size: 20px;
+        text-align: center;
+    }
+    header .logo img {
+        margin-bottom: 40px;
+        max-width: 120px;
+    }
+    .moto-heading {
+        text-align: left;
+    }
+    .fp-controlArrow.fp-next {
+        border-width: 14px 0 14px 10px;
+    }
+    .fp-controlArrow.fp-prev {
+        border-width: 14px 10px 14px 0;
+}
+
 @media(min-width:768px) {
+
+    header .logo img {
+        margin-bottom: 40px;
+        margin-right: 40px;
+        margin-left:100px;
+        max-width: 120px;
+        float: left;
+    }
+
     header .intro-text {
-        padding-top: 250px;
+        padding-top: 200px;
         padding-left: 50px;
-        padding-bottom: 350px;
+        padding-bottom: 40px;
     }
 
     header .intro-text .intro-heading {
         text-transform: uppercase;
         font-family: serif;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 700;
         line-height: 45px;
-        hover: left;
         padding-bottom: 50px;
+
     }
     header .intro-lead-in {
         font-size: 40px;
         font-style: italic;
-        padding-bottom: 30px;
+        padding-bottom: 300px;
+    }
+    header .intro-lead-in .more {
+        margin-left: 30px;
     }
  }
 
@@ -425,10 +462,10 @@ h2 em {
 
 .thumb {
     padding: 10px;
+    display: inline-flex;
 }
 .thumb a.active {
     border: solid 4px;
-    padding: 4px 0 10px 0 ;
 }
 
 .fp-controlArrow.fp-next {
@@ -640,7 +677,6 @@ section#contact .text-danger {
 }
 
 footer {
-    padding: 25px 0;
     text-align: center;
     background: 
     linear-gradient(
@@ -676,6 +712,7 @@ footer .sk {
 }
 
 ul.social-buttons {
+    margin-top: 20px;
     margin-bottom: 0;
 }
 

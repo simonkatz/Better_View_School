@@ -55,13 +55,13 @@ $('.about').bxSlider({
   auto: true,
   controls: false,
   captions: true,
-  pause: 7000
+  pause: 7000,
 });
 
 $('#fullpage').fullpage({
     sectionsColor: ['white', '#F5F5F5'],
     loopHorizontal: false,
-    anchors:['firstPage', 'secondPage'],
+    anchors:['firstPage', 'secondPage', 'footer'],
     paddingTop: '30px',
     paddingBottom: '30px',
     fitToSection: false,
