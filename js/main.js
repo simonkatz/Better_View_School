@@ -61,7 +61,7 @@ $('.about').bxSlider({
 $('#fullpage').fullpage({
     sectionsColor: ['white', '#F5F5F5'],
     loopHorizontal: false,
-    anchors:['firstPage', 'secondPage', 'footer'],
+    anchors:['firstPage', 'secondPage', 'last'],
     paddingTop: '30px',
     paddingBottom: '30px',
     fitToSection: false,
