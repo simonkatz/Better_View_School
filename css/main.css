@@ -341,15 +341,14 @@ header .intro-text {
         font-family: serif;
         font-size: 25px;
         text-align: center;
+        padding-bottom: 20px;
     }
     header .intro-lead-in {
         font-size: 20px;
         text-align: center;
+        padding-bottom: 20px;
     }
-    header .logo img {
-        margin-bottom: 40px;
-        max-width: 120px;
-    }
+
     .moto-heading {
         text-align: left;
     }
@@ -362,18 +361,10 @@ header .intro-text {
 
 @media(min-width:768px) {
 
-    header .logo img {
-        margin-bottom: 40px;
-        margin-right: 40px;
-        margin-left:100px;
-        max-width: 120px;
-        float: left;
-    }
-
     header .intro-text {
-        padding-top: 200px;
+        padding-top: 250px;
         padding-left: 50px;
-        padding-bottom: 40px;
+        padding-bottom: 250px;
     }
 
     header .intro-text .intro-heading {
@@ -388,7 +379,7 @@ header .intro-text {
     header .intro-lead-in {
         font-size: 40px;
         font-style: italic;
-        padding-bottom: 300px;
+        padding-bottom: 40px;
     }
     header .intro-lead-in .more {
         margin-left: 30px;
@@ -415,7 +406,11 @@ section h2.section-heading {
     margin: 15px 0;
     text-transform: none;
 }
-
+.logo img {
+    max-width: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 #moto h2{
     text-transform: none;
     font-size: 30px;
