@@ -77,16 +77,68 @@
 
     <!-- Header -->
     <header>
-            <div class="col-md-12">
-            <div class="intro-text text-center">
-                <div class="intro-heading">Better View School</div>
-                <div class="intro-lead-in">
-                    Better To Learn!
-                </div>
-                <a href="#mission" class="page-scroll btn btn-primary more">Tell Me More</a>
-            </div>
-            </div>
-        </div>
+
+    <div class="slider">
+      <div class="slider-fixed-item center-align">
+        <a href="#mission" class="page-scroll btn btn-primary more">Tell Me More.</a>
+      </div>
+      <ul class="slides">
+        <li>
+          <img src="img/header/class.jpg" class="img-responsive">
+          <div class="caption center-align">
+          <span>
+            <div class="intro-heading">Better View School</div>
+            <div class="intro-lead-in">Better to Learn.</div>
+          </div>
+          </span>
+        </li>
+        <li>
+          <img src="img/header/swimming.jpg" class="img-responsive">
+          <div class="caption left-align">
+          <span>
+            <h1 class="heading">Sports</h1>
+            <h3 class="lead-in">Pupils in Better View Swimming Pool.</h3>
+          </div>
+          </span>
+        </li>
+        <li>
+          <img src="img/header/computer.jpg" class="img-responsive">
+          <div class="caption right-align">
+          <span>
+            <h1 class="heading">Computer Classes</h1>
+            <h3 class="lead-in">Pupils in computer class.</h3>
+          </div>
+          </span>
+        </li>
+        <li>
+          <img src="img/header/ballet.jpg" class="img-responsive">
+          <div class="caption center-align">
+          <span>
+            <h1 class="heading">Dance</h1>
+            <h3 class="lead-in">Some of our Ballet Dancers.</h3>
+          </div>
+          </span>
+        </li>
+        <li>
+          <img src="img/header/baby.jpg" class="img-responsive">
+          <div class="caption right-align">
+          <span>
+            <h1 class="heading">Day Care With Toys</h1>
+            <h3 class="lead-in">8 Months to 2 Years.</h3>
+          </div>
+          </span>
+        </li>
+        <li>
+          <img src="img/header/dancers.jpg" class="img-responsive">
+          <div class="caption left-align">
+          <span>
+            <h1 class="heading">Culture</h1>
+            <h3 class="lead-in">Pupils dancing on stage.</h3>
+          </div>
+          </span>
+        </li>
+      </ul>
+    </div>
     </header>
 	
 	<!-- Section -->
@@ -232,8 +284,19 @@
 
     <!-- jQuery -->
     <script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
     <script>
     $("#footer").load('footer.html');
+    </script>
+    <script>
+        $('.slider').slider(
+            {
+                full_width: true,
+                indicators: true,
+                height: 600,
+                no_wrap: true
+            }
+        );
     </script>
 </body>
 
