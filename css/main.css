@@ -542,7 +542,7 @@ h2 em {
     font-size: 14px;
 }
 .marquee {
-  overflow: hidden;
+  overflow: scroll;
   height: 400px;
 }
 .team-member {
