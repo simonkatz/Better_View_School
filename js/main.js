@@ -50,14 +50,24 @@ $('.extra').bxSlider({
   pagerCustom: '#bx-extra'
 });
 
-$('.about').bxSlider({
-  mode: 'fade',
-  auto: true,
-  controls: false,
-  captions: true,
-  pause: 7000,
-});
 
+$('header .slider').slider(
+    {
+        full_width: true,
+        indicators: true,
+        height: 700,
+        no_wrap: true
+    }
+);
+    
+$('#about .slider').slider(
+    {
+        full_width: true,
+        indicators: true,
+        height: 600,
+        no_wrap: true
+    }
+);
 $('#fullpage').fullpage({
     sectionsColor: ['white', '#F5F5F5'],
     loopHorizontal: false,

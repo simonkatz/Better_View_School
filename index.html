@@ -87,6 +87,8 @@
       <ul class="slides">
         <li>
           <img src="img/header/class.jpg" alt="Nursery" class="img-responsive">
+          <div class="overlay">
+          </div>
           <div class="caption center-align">
           <span>
             <div class="intro-heading">Better View School</div>
@@ -96,6 +98,8 @@
         </li>
         <li>
           <img src="img/header/swimming.jpg" alt="Boarding School" class="img-responsive">
+          <div class="overlay">
+          </div>
           <div class="caption left-align">
           <span>
             <h1 class="heading">Sports</h1>
@@ -104,7 +108,11 @@
           </span>
         </li>
         <li>
+      <div class="overlay">
+      </div>
           <img src="img/header/computer.jpg" alt="Primary School" class="img-responsive">
+          <div class="overlay">
+          </div>
           <div class="caption right-align">
           <span>
             <h1 class="heading">Computer Classes</h1>
@@ -114,6 +122,8 @@
         </li>
         <li>
           <img src="img/header/ballet.jpg" alt="Entebbe Road" class="img-responsive">
+          <div class="overlay">
+          </div>
           <div class="caption center-align">
           <span>
             <h1 class="heading">Dance</h1>
@@ -123,6 +133,8 @@
         </li>
         <li>
           <img src="img/header/baby.jpg" alt="Day School" class="img-responsive">
+          <div class="overlay">
+          </div>
           <div class="caption right-align">
           <span>
             <h1 class="heading">Day Care With Toys</h1>
@@ -132,6 +144,8 @@
         </li>
         <li>
           <img src="img/header/dancers.jpg" alt="Najjanankumbi" class="img-responsive">
+          <div class="overlay">
+          </div>
           <div class="caption left-align">
           <span>
             <h1 class="heading">Culture</h1>
@@ -188,27 +202,24 @@
 	</section>
 
     <!-- Section -->
-    <section id="moto">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-md-5">
-                        <h2 class="moto-heading text-center">BETTER <em>to</em> LEARN</h2>
-                    </div>
-                    <div class="col-md-7">
-                        <h4 class="moto-heading">Our Mission:</h4>
-                        <p class="moto-heading green">Creating an educated, self-motivated and responsible citizen.</p>
-                    </div>
-                </div>
+    <div id="moto">
+        <div class="">
+            <div class="col-md-5 col-md-offset-1 section">
+                <h2 class="moto-heading text-center">BETTER <em>to</em> LEARN</h2>
+                <h4 class="moto-heading">Our Mission:</h4>
+                <p class="moto-heading green">Creating an educated, self-motivated and responsible citizen.</p>
+            </div>
+            <div class="half hidden-xs hidden-sm">
+                <img src="img/about/graduands.png" title="Classroom" alt="Primary School" class="img-responsive" height="400px">
             </div>
         </div>
-    </section>
+    </div>
 
-	<section id="about" class="bg-light-gray">
-		<div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="about">
+	<section id="about">
+		<div class="row">
+            <div class="">
+                <div class="col-md-6 slider">
+                    <ul class="slides">
                         <li><img src="img/pupils/pupils.jpg" title="Classroom" alt="Primary School"></li>
                         <li><img src="img/team/staff.jpg" title="Academic Staff Members" alt="Better View School Staff"></li>
                         <li><img src="img/pupils/toys.jpg" title="Day Care" alt="Day Care School"></li>
@@ -220,11 +231,8 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <div class="col-md-12 marquee bg-white">
+                    <div class="col-md-9">
                         <div class="row heading">
-                            <div class="col-md-12">
-                                <div class="logo img-responsive"><img class="center-block" src="img/bvs_logo.png" alt="Better View School"></div>
-                            </div>
                             <h3 class="text-center">About</h3>
                                 <div class='text-center'>
                                     <i class="fa fa-gg red"></i>
@@ -282,23 +290,49 @@
             </div>
         </div>
     </section>
-    <div id="footer"></div>
+    <footer>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 copyright">
+                    <span class="copyright">Copyright &copy; Better View School 2016.<br/> All rights reserved.</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/betterviewschool"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 copyright">
+                    <span class="copyright"><p>Better View School is located 5km along Entebbe Road. Next to Freedom City</p></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/main.js"></script>
     <script>
     $("#footer").load('footer.html');
-    </script>
-    <script>
-        $('.slider').slider(
-            {
-                full_width: true,
-                indicators: true,
-                height: 600,
-                no_wrap: true
-            }
-        );
     </script>
 </body>
 

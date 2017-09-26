@@ -343,6 +343,9 @@ header .intro-text {
         padding-bottom: 20px;
     }
 
+    h4.moto-heading {
+        padding-top: 20px;
+    }
     .moto-heading {
         text-align: left;
     }
@@ -566,6 +569,10 @@ h2 em {
     margin-top: 0;
 }
 
+section#about {
+    padding: 0px;
+}
+
 section#contact {
     background-color: #222;
     background-image: url(../img/contact.jpg);
@@ -734,33 +741,21 @@ img::-moz-selection {
 
 .slider {
     position: relative;
-    height: 400px;
     width: 100%;
 }
-
-.slider.fullscreen {
+.slider .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    opacity: 0.7;
 }
 
-.slider.fullscreen ul.slides {
-    height: 100%;
-}
-
-.slider.fullscreen ul.indicators {
-    z-index: 2;
-    bottom: 30px;
-}
 
 .slider .slides {
     background-color: #9e9e9e;
     margin: 0;
-    height: 400px;
 }
 
 .slider .slides li {
@@ -770,7 +765,7 @@ img::-moz-selection {
     left: 0;
     z-index: 1;
     width: 100%;
-    height: inherit;
+    height: -webkit-fill-available;
     overflow: hidden;
 }
 
@@ -842,21 +837,12 @@ img::-moz-selection {
     text-align: center;
 }
 
-header .caption span {
-    display: inline-table;
-    background: 
-        linear-gradient(
-            rgba(0, 0, 0, 0.3), 
-            rgba(0, 0, 0, 0.3)
-        );
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 @media(min-width:768px) {
 
     header{
-        padding-top: 20px;
+        padding-top: 30px;
+        display: inherit;
     }
 
     header .intro-heading {
@@ -890,5 +876,26 @@ header .caption span {
         text-transform: initial;
         font-weight:300;
         color: white;
+    }
+}
+
+    .section {
+        padding: 25px;
+    }
+    
+@media(min-width:992px) {
+    #about .slider, .half {
+        width: 50%;
+        display: inline-block;
+    }
+ }
+
+@media(min-width:1200px) {
+    #about .slider, .half {
+        width: 50%;
+        display: inline-block;
+    }
+    .section {
+        padding: 50px;
     }
  }
