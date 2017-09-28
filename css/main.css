@@ -6,7 +6,9 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Source Serif Pro", "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto 2.0', 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.4px;
+    font-weight:300;
 }
 
 .text-muted {
@@ -50,7 +52,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: 'Roboto 2.0', 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .img-centered {
@@ -216,8 +218,8 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 300;
+    letter-spacing: 2px;
     color: #fff;
 }
 
@@ -396,7 +398,6 @@ h2 em {
 }
 #moto p {
     font-size: 18px;
-    font-style: italic;
 }
 
 .section {
@@ -846,8 +847,8 @@ img::-moz-selection {
     }
 
     header .intro-heading {
-        text-transform: uppercase;
-        font-family: serif;
+        text-transform: uppercase;    
+        font-family: 'Roboto 2.0', 'Source Sans Pro', sans-serif;
         font-size: 60px;
         font-weight: 700;
         line-height: 45px;
@@ -857,7 +858,6 @@ img::-moz-selection {
     }
     header .intro-lead-in {
         font-size: 40px;
-        font-style: italic;
         padding-bottom: 40px;
         color: white;
     }
@@ -872,7 +872,6 @@ img::-moz-selection {
     }
     header .lead-in {
         font-size: 24px;
-        font-style: italic;
         text-transform: initial;
         font-weight:300;
         color: white;
@@ -881,6 +880,9 @@ img::-moz-selection {
 
     .section {
         padding: 25px;
+    }
+    .h3, h3 {
+        font-size: 20px;
     }
     
 @media(min-width:992px) {
@@ -899,3 +901,9 @@ img::-moz-selection {
         padding: 50px;
     }
  }
+
+@media(min-width:1500px) {
+    .section {
+        padding: 100px 50px;
+    }
+}
