@@ -348,9 +348,6 @@ header .intro-text {
     h4.moto-heading {
         padding-top: 20px;
     }
-    .moto-heading {
-        text-align: left;
-    }
     .fp-controlArrow.fp-next {
         border-width: 14px 0 14px 10px;
     }
@@ -386,7 +383,8 @@ section h2.section-heading {
 }
 #moto h2{
     text-transform: none;
-    font-size: 30px;
+    font-size: 56px;
+    font-weight: 300;
 } 
 h2 em {
     text-transform: none;
@@ -530,20 +528,12 @@ h2 em {
     }
 }
 
-#about .activity {
-    padding-bottom: 100px;
+.about h2 {
+    font-size: 50px;
+    font-weight: 400;
 }
-
-#about .activity .text {
-    padding-top: 30px;
-}
-
-#about .activity .right {
-    text-align: right;
-}
-
-#about i {
-    font-size: 14px;
+.about .section-heading {
+    padding-bottom: 60px;
 }
 .marquee {
   overflow: scroll;
@@ -570,10 +560,37 @@ h2 em {
     margin-top: 0;
 }
 
-section#about {
+section.hours {
     padding: 0px;
 }
 
+.hours .text-section {
+    padding: 100px 0px;
+}
+
+.hours .text-section h3 {
+    padding-bottom: 20px;
+}
+#primary {
+    background-color: #222;
+    background-image: url(../img/primary.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nursery {
+    background-color: #222;
+    background-image: url(../img/nursery.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#primary h1, #nursery h1 {
+    padding: 120px 0px;
+    color: #fff;
+    font-size: 50px;
+}
 section#contact {
     background-color: #222;
     background-image: url(../img/contact.jpg);
@@ -775,6 +792,8 @@ img::-moz-selection {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: transform 5000ms linear 0s;
+    transform: scale(1.05, 1.05);
 }
 
 .slider .slides li .caption {
@@ -866,7 +885,7 @@ img::-moz-selection {
     }
 
     header .heading {
-        font-size: 36px;
+        font-size: 56px;
         font-weight: 600;
         color: white;
     }
@@ -883,17 +902,24 @@ img::-moz-selection {
     }
     .h3, h3 {
         font-size: 20px;
+        font-weight: 600;
     }
     
 @media(min-width:992px) {
-    #about .slider, .half {
+    .hours .slider, .half {
         width: 50%;
         display: inline-block;
+    }
+
+    #primary h1, #nursery h1 {
+        padding: 150px 0px;
+        font-size: 70px;
+        color: #fff;
     }
  }
 
 @media(min-width:1200px) {
-    #about .slider, .half {
+    .hours .slider, .half {
         width: 50%;
         display: inline-block;
     }

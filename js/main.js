@@ -60,7 +60,7 @@ $('header .slider').slider(
     }
 );
     
-$('#about .slider').slider(
+$('.hours .slider').slider(
     {
         full_width: true,
         indicators: true,
@@ -80,15 +80,5 @@ $('#fullpage').fullpage({
     paddingBottom: 0,
 });
  
-$('.marquee').marquee({
-    duration: 25000,
-    gap: 50,
-    delayBeforeStart: 15000,
-    direction: 'up',
-    duplicated: true,
-    startVisible: true,
-    pauseOnHover: true,
-    pauseOnCycle: true
-});
 
 $('.swipebox').swipebox();
