@@ -854,7 +854,7 @@ img::-moz-selection {
 .card {
     background: #fff;
     border-radius: 5px;
-    padding: 100px 20px;
+    padding: 70px 20px;
     margin: 0 auto 100px auto;
     position: relative;
     max-width:350px;
