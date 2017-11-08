@@ -548,6 +548,7 @@ h2 em {
     margin: 0 auto;
     border: 7px solid #fff;
 	max-height: 400px;
+    max-width: 80%;
 }
 
 .team-member h4 {
@@ -857,7 +858,7 @@ img::-moz-selection {
     padding: 70px 20px;
     margin: 0 auto 100px auto;
     position: relative;
-    max-width:350px;
+    max-width:450px;
 }
 .card:after {
     content:'';
@@ -939,7 +940,7 @@ img::-moz-selection {
     .section {
         padding: 50px;
     }
-    #school .container {
+    #school .container, #team .container {
         width: 1370px;
     }
  }
